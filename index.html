@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>sguzman soundboard</title>
+	<style type="text/css">
+		button {
+			margin: auto;
+			width: 50%;
+			padding: 10px;
+			height: 50px;
+		}
+	</style>
+</head>
+<body>
+	<h1>Salvador's Sounboard</h1>
+	<h3>My greatest hits!</h3>
+	<button onclick="play(anime)">Anime</button>
+	<button onclick="play(fastest_internet)">Fastest Internet</button>
+	<button onclick="play(not_to_brag_but)">Not To Brag But</button>
+	<button onclick="play(ok_no_need_to_brag)">Ok No Need to Brag</button>
+
+	<div>
+		<audio id="anime">
+		  <source src="./anime.mp3" type="audio/mpeg">
+		  	Your browser does not support the audio element.
+		</audio>
+		<audio id="fastest_internet">
+		  <source src="./fastest_internet.mp3" type="audio/mpeg">
+		  	Your browser does not support the audio element.
+		</audio>
+				<audio id="not_to_brag_but">
+		  <source src="./not_to_brag_but.mp3" type="audio/mpeg">
+		  	Your browser does not support the audio element.
+		</audio>
+				<audio id="ok_no_need_to_brag">
+		  <source src="./ok_no_need_to_brag.mp3" type="audio/mpeg">
+		  	Your browser does not support the audio element.
+		</audio>
+	</div>
+
+	<script>
+		const anime = document.getElementById('anime');
+		const fastest_internet = document.getElementById('fastest_internet')
+		const not_to_brag_but = document.getElementById('not_to_brag_but')
+		const ok_no_need_to_brag = document.getElementById('ok_no_need_to_brag')
+
+		function play(audio) {
+			audio.play();
+		}
+
+	</script>
+</body>
+</html>
